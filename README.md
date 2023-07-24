@@ -2,6 +2,9 @@
 
 Retrieval-augmented generation example that answers questions from Arxiv abstracts and titles.
 
+![arxiv-retrieval-anns](https://github.com/enginoid/arxiv-qa-playground/assets/62200/48365997-2157-4a35-9796-235abfb47abb)
+(Video sped up 3x.)
+
 ## Setup
 
 * Copy `secrets-example.json` and replace with your own key.
