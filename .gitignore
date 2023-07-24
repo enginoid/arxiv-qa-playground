@@ -1,0 +1,6 @@
+documents.json
+arxiv-metadata-oai-snapshot.json
+secrets.json
+
+meili_data/
+qdrant_storage/

@@ -1,0 +1,23 @@
+version: '3'
+services:
+  qdrant:
+    image: qdrant/qdrant
+    ports:
+      - 6333:6333
+    volumes:
+      - ./qdrant_storage:/qdrant/storage
+
+  meilisearch:
+    image: getmeili/meilisearch:v1.2
+    ports:
+      - 7700:7700
+    volumes:
+      - ./meili_data:/meili_data
+  
+  search-ui:
+    image: nginx:latest
+    volumes:
+      - ./search_ui:/usr/share/nginx/html:ro
+    ports:
+      - 8080:80
+    restart: always
